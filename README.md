@@ -38,7 +38,7 @@ conda env create -f full_environment.yml -n rtse_env
 conda activate rtse_env
 pip install -r rtse_requirements.txt
 ```
-## Download and unzip model weights from Google Drive
+### 2. **Download and unzip model weights from Google Drive**
 ```bash
 gdown --fuzzy https://drive.google.com/file/d/109IRfgzH9bi1Jp3uYLed-2yZkEavh_6F/view?usp=drive_link
 unzip -o rtse_model.zip
@@ -56,7 +56,7 @@ python3 metrics/rtse_latency.py ./metrics/configs/config-3.json
 python3 metrics/rtse_latency.py ./metrics/configs/config-4.json
 python3 metrics/rtse_latency.py ./metrics/configs/config-5.json
 ```
-### 3. Zip latency results
+### 3. **Zip latency results**
 ```bash
 zip -r latency_results.zip time_profiling
 ```
@@ -76,7 +76,7 @@ This script performs the following actions automatically:
 
 2. Installs additional pip dependencies from rtse_requirements.txt.
 
-3. Executes the latency measurement script with multiple configuration files.
+3. Download model weights and executes the latency measurement script with multiple configuration files.
 
 4. Zips the profiling results into latency_results.zip.
 
