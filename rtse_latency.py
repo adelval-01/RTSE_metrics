@@ -26,7 +26,7 @@ from vvtk_net.v1.transforms import *
 from vvtk_net.v1.transforms_fe import *
 from vvtk_net.v1.datafeed import *
 from vvtk_net.v1.layers_pytorch import *
-from eval_utils import *
+# from eval_utils import *
 
 
 def load_nets(workspace_dir):
