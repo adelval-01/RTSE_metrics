@@ -1,0 +1,8 @@
+# Ignore enhanced audios
+data/audio/enhanced/
+
+# Ignore model weights
+afterburner8k/data/model/
+
+# Ignore time profiling data
+time_profiling/
