@@ -3,6 +3,7 @@ data/audio/enhanced/
 
 # Ignore model weights
 afterburner8k/data/model/
+rtse_model.zip
 
 # Ignore time profiling data
 time_profiling/

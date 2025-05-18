@@ -41,6 +41,7 @@ triton==3.1.0
 types-protobuf==5.29.1.20250403
 yarl==1.20.0
 zstandard==0.23.0
+gdown==5.2.0
 
 --extra-index-url https://download.pytorch.org/whl/cu118
 torch==2.5.0+cu118

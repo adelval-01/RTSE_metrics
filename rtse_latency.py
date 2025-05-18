@@ -36,7 +36,8 @@ def load_nets(workspace_dir):
 
     from net_snr import Net_snr 
     net_snr = Net_snr(input_dim, output_dim, cuda=True, single_gpu=True)
-    net_snr.load( workspace_dir + 'data/model/theta_last')
+    # net_snr.load( workspace_dir + 'data/model/theta_last')
+    net_snr.load_theta( workspace_dir + 'data/model/theta_last')
 
     #========================= ONNX MODEL LOAD =============================#
 

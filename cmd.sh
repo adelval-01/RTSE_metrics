@@ -16,6 +16,12 @@ conda activate rtse_env
 echo "Installing pip packages..."
 pip install -r rtse_requirements.txt
 
+# Download and Unzip RTSE model data
+echo "Downloading RTSE model data..."
+gdown --fuzzy https://drive.google.com/file/d/109IRfgzH9bi1Jp3uYLed-2yZkEavh_6F/view?usp=drive_link
+echo "Unzipping RTSE model data..."
+unzip -o rtse_model.zip
+
 # Run metrics evaluations
 echo "Running latency measurements..."
 python3 rtse_latency.py
