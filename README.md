@@ -6,12 +6,18 @@ This repository implements a framework for **Real-Time Speech Enhancement (RTSE)
 
 The core script, `rtse_latency.py`, loads configuration files (`configs/*.json`) that define parameters affecting latency, such as:
 
-- **Diezmation Factor**: Controls sub-sampling or frame skipping strategies to reduce computational load.
+- **Diezmation Factor**: Controls sub-sampling SNR mask calculation to reduce computational load.
 - **Progressive Startup**: Gradually adding more context to the RTSE system.
-- **Warm-Up Factor**: Repeats audio processing to simulate the caching and optimization behavior of the GPU or CPU over time.
+- **Warm-Up Factor**: Repeats audio processing dummy tensor to simulate the caching and optimization behavior of the GPU or CPU over time.
 
 Each configuration is processed independently, and for every run, the latency results are saved as a `.mat` file. This format is compatible with MATLAB and Python (via `scipy.io`) and facilitates post-processing, plotting, and statistical analysis.
 
+---
+
+## ⚠️ Requirements
+
+- Cuda support
+- Conda for environment
 ---
 
 ## 📥 Input
@@ -44,7 +50,10 @@ gdown --fuzzy https://drive.google.com/file/d/109IRfgzH9bi1Jp3uYLed-2yZkEavh_6F/
 unzip -o rtse_model.zip
 ```
 
+---
+
 ## 🚀 Running the RTSE and Metrics
+
 ### 1. **Basic Execution with Diezmation and Progressive Startup**
 ```bash
 python3 metrics/rtse_latency.py
@@ -61,7 +70,10 @@ python3 metrics/rtse_latency.py ./metrics/configs/config-5.json
 zip -r latency_results.zip time_profiling
 ```
 
+---
+
 ## 🔧 Quick Start
+
 To fully set up the environment, install dependencies, run RTSE latency profiling, and compress the results, you can use the provided script:
 
 ```bash
