@@ -38,6 +38,11 @@ conda env create -f full_environment.yml -n rtse_env
 conda activate rtse_env
 pip install -r rtse_requirements.txt
 ```
+## Download and unzip model weights from Google Drive
+```bash
+gdown --fuzzy https://drive.google.com/file/d/109IRfgzH9bi1Jp3uYLed-2yZkEavh_6F/view?usp=drive_link
+unzip -o rtse_model.zip
+```
 
 ## 🚀 Running the RTSE and Metrics
 ### 1. **Basic Execution with Diezmation and Progressive Startup**
