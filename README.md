@@ -65,7 +65,6 @@ zip -r latency_results.zip time_profiling
 To fully set up the environment, install dependencies, run RTSE latency profiling, and compress the results, you can use the provided script:
 
 ```bash
-chmod +x cmd.sh
 ./cmd.sh
 ```
 
