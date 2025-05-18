@@ -6,3 +6,4 @@ afterburner8k/data/model/
 
 # Ignore time profiling data
 time_profiling/
+latency_results.zip
