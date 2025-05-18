@@ -61,7 +61,7 @@ python3 metrics/rtse_latency.py ./metrics/configs/config-5.json
 zip -r latency_results.zip time_profiling
 ```
 
-🔧 Quick Start
+## 🔧 Quick Start
 To fully set up the environment, install dependencies, run RTSE latency profiling, and compress the results, you can use the provided script:
 
 ```bash
