@@ -8,10 +8,10 @@ import pickle
 import warnings
 import gzip
 import scipy.io
+import scipy.special as sc
 from scipy import signal
 from scipy.io import wavfile
 from scipy.io import loadmat
-import scipy.special as sc
 # import matplotlib.pyplot as plt
 
 warnings.simplefilter('ignore')
