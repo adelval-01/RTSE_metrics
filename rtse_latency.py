@@ -227,7 +227,7 @@ def run_rtse_latency(cfg, config_num, mw_len, df_len, workspace_dir, net_snr, or
             dropout_rate = 0
             accum_delay = 0
             preprocess_latencies = []
-            inference_latencies = []
+            inference_latencies = [0]*20
             total_latencies = []
             
 
